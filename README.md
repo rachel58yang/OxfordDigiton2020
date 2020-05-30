@@ -1,2 +1,2 @@
-# OxfordDigiton2020
+# OxfordDigithon2020
 Tinder but sentimental
