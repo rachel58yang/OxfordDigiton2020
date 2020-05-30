@@ -7,7 +7,7 @@ class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     text = models.TextField()
     create_date = models.DateTimeField(default=timezone.now)
-    response = models.IntegerField(default=None)
+    response = models.IntegerField(default=0)
 
     def publish(self):
         self.create_date = timezone.now()
