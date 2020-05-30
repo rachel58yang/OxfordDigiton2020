@@ -1,21 +1,10 @@
-<html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-        <title>Quill</title>
-    </head>
-    <div style="text-align: center;">
-        <h2 style="margin-top: 10%;">Welcome to Quill!</h2>
-        <h6 style="margin-bottom: 20px;">What's on your mind today?</h6>
-        <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
-            <textarea class="form-control" style="width: 45%; height: 300px;" id="exampleFormControlTextarea1" rows="3">Dear Stranger...</textarea>
-        </div>
-        <a href="/" type="button" class="btn btn-primary" style="margin-bottom: 20px;">Send Letter</a>
-        <a href="/letters" type="button" class="btn btn-secondary" style="margin-bottom: 20px;">View Others' Letters</a>
+{% extends 'letters/index.html' %}
+<div style="text-align: center;">
+    <h2 style="margin-top: 10%;">Welcome to Quill!</h2>
+    <h6 style="margin-bottom: 20px;">What's on your mind today?</h6>
+    <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+        <textarea class="form-control" style="width: 45%; height: 300px;" id="exampleFormControlTextarea1" rows="3">Dear Stranger...</textarea>
     </div>
-</html>
+    <a href="/" type="button" class="btn btn-primary" style="margin-bottom: 20px;">Send Letter</a>
+    <a href="/letters" type="button" class="btn btn-secondary" style="margin-bottom: 20px;">View Others' Letters</a>
+</div>
