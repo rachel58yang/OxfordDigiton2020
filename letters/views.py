@@ -18,6 +18,7 @@ def view_letters(request):
     random_letter = Post.objects.get(pk = random_index)
     return render(request, 'letters/view_letters.html', {'letter': random_letter})
 
-def response(request):
-    return render(request, 'letters/response.html', {})
+def response(request, id):
+    letter = Post.objects.get(pk = id)
+    return render(request, 'letters/response.html', {'letter': letter})
 
