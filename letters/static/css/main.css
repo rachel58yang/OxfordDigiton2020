@@ -3,6 +3,10 @@ body {
   height: 100%;
 } 
 
+h1, h2 {
+  font-family: 'Yellowtail', cursive;
+}
+
 #full-logo{
   width:300px;
 }
@@ -22,11 +26,11 @@ body {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   ;*/
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
+  display: inline-flex;
+  /* display: -webkit-box; */
+  /* display: flex; */
+  /* -ms-flex-align: center;
+  -ms-flex-pack: center; */
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
