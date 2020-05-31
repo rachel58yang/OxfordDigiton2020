@@ -1,4 +1,4 @@
-# Quill
+<img src="https://github.com/rachel58yang/OxfordDigiton2020/blob/master/letters/static/images/blue-full.png" style="width: 200px;">
 A 21st Century Pen Pal.
 
 ## Dear Quil Pal,
