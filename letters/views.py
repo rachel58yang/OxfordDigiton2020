@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Post
 from .forms import PostForm
 from random import random
@@ -19,7 +19,7 @@ def add_letter(request):
             post.create_date = timezone.now()
             post.response = 0
             post.save()
-            return redirect('letters/add_letter.html', pk=post.pk)
+            return redirect('letters/add_letter.html')
     else:
         form = PostForm()
     return render(request, 'letters/add_letter.html', {})
