@@ -3,6 +3,10 @@ body {
   height: 100%;
 } 
 
+h1, h2 {
+  font-family: 'Yellowtail', cursive;
+}
+
 #full-logo{
   width:300px;
 }
