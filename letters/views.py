@@ -13,6 +13,8 @@ def add_letter(request):
     return render(request, 'letters/add_letter.html', {})
 
 def view_letters(request):
+    # filter out responses
+    # filter out posts that current user created 
     number_of_records = Post.objects.count()
     random_index = int(random()*number_of_records)+1
     random_letter = Post.objects.get(pk = random_index)
