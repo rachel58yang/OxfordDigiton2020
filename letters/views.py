@@ -3,11 +3,11 @@ from .models import Post
 from random import random
 
 
-def home(request):
+def login(request):
     return render(request, 'letters/index.html', {})
 
-def login(request):
-    return render(request, 'letters/login.html', {})
+def home(request):
+    return render(request, 'letters/home.html', {})
 
 def add_letter(request):
     return render(request, 'letters/add_letter.html', {})
