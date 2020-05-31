@@ -4,12 +4,12 @@
 <div style="text-align: center;">
     <h2 >Welcome to Quill!</h2>
     <h6 style="margin-bottom: 20px;">What's on your mind today?</h6>
+    <form method="POST" class="post-form" action=".">{% csrf_token %}
     <div class="d-flex justify-content-center" style="margin-bottom: 20px; width:50em;">
-        <textarea class="form-control" style="height: 300px;" id="exampleFormControlTextarea1" rows="3">Dear Stranger,</textarea>
+        <textarea class="form-control" style="height: 300px;" id="exampleFormControlTextarea1" name="letter_text" rows="3">Dear Stranger,</textarea>
     </div>
     <a href="/letters" type="button" class="btn btn-light" style="margin-bottom: 20px;">Find New Quill Pal</a>
-    <form method="POST" class="post-form">{% csrf_token %}
-        <button type="submit" class="save btn btn-dark" style="margin-bottom: 20px;">Send Letter</button>
+        <button type="submit" a href="/addLetter" class="save btn btn-dark" style="margin-bottom: 20px;">Send Letter</button>
     </form>
     <!-- <div class="alert alert-danger" role="alert">
         <strong>Whoops!</strong> You've reached your limit on letters written today.
