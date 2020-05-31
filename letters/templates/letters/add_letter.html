@@ -2,10 +2,10 @@
 
 {% block content %}
 <div style="text-align: center;">
-    <h1>Welcome to Quill!</h1>
-    <h6 style="margin-bottom: 20px;">What's on your mind today?</h6>
+    <h1 style="margin-bottom: 20px;">What's on your mind today?</h1>
+    {% comment %} <h6 style="margin-bottom: 20px;">What's on your mind today?</h6> {% endcomment %}
     <div class="d-flex justify-content-center" style="margin-bottom: 20px; width:50em;">
-        <textarea class="form-control" style="height: 300px;" id="exampleFormControlTextarea1" rows="3">Dear Stranger,</textarea>
+        <textarea class="form-control" style="height: 300px;" id="exampleFormControlTextarea1" rows="3">Dear Quill Pal,</textarea>
     </div>
     <a href="/letters" type="button" class="btn btn-light" style="margin-bottom: 20px;">Find New Quill Pal</a>
     <form method="POST" class="post-form">{% csrf_token %}
