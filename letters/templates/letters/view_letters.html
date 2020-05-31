@@ -1,17 +1,18 @@
 {% extends 'letters/home.html' %}
 {% block content %}
-    <div class="d-flex justify-content-center" style="margin-bottom: 20px">
-        <div class="card" style="width:50em;">
+    <div>
+        <div class="card" style="width:50em; margin-bottom: 30px;">
             <div class="card-body">
-            <h5 class="card-title">Dear Stranger,</h5>
-            <p class="card-text">{{ letter.text }}</p>
-            <div style="text-align: center;">
-                <a href="" class="btn btn-light" style="margin-bottom: 20px;">Show another letter</a>
-                <a href="#" class="btn btn-danger" style="margin-bottom: 20px;">Report</a>
-                <a href="/response/{{letter.id}}" class="btn btn-primary" style="margin-bottom: 20px;">Respond</a>
-            </div>
+                <h5 class="card-title">Dear Stranger,</h5>
+                <p class="card-text" style="margin-bottom: 40px;">{{ letter.text }}</p>
+                <div>
+                    <a href="#" class="btn btn-danger" style="margin-bottom: 15px;">Report</a>
+                    <a href="/response/{{letter.id}}" class="btn btn-primary" style="margin-bottom: 15px;">Respond</a>
+                </div>
             </div>
         </div>
+        <div style="text-align: center;">
+            <a href="" class="btn btn-light" style="margin-bottom: 20px;" type="submit">Show another letter</a>
+        </div>
     </div>
-</html>
 {% endblock %}
