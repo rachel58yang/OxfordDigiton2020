@@ -1,9 +1,16 @@
 html,
 body {
   height: 100%;
-}
+} 
 
-body {
+#full-logo{
+  width:300px;
+}
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -16,7 +23,18 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #5271ff;
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
 }
+#content.active {
+  width: 100%;
+}
+
+/* ---------------------------------------------------
+    FORM STYLE
+----------------------------------------------------- */
 
 .form-signin {
   width: 100%;
@@ -46,8 +64,7 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
+} 
 
-#full-logo{
-  width:300px;
-}
+
+

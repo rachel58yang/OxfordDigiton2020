@@ -4,11 +4,11 @@ from .forms import PostForm
 from random import random
 
 
-def home(request):
+def login(request):
     return render(request, 'letters/index.html', {})
 
-def login(request):
-    return render(request, 'letters/login.html', {})
+def home(request):
+    return render(request, 'letters/home.html', {})
 
 def add_letter(request):
     if request.method == "POST":
@@ -25,6 +25,8 @@ def add_letter(request):
     return render(request, 'letters/add_letter.html', {})
 
 def view_letters(request):
+    # filter out responses
+    # filter out posts that current user created 
     number_of_records = Post.objects.count()
     random_index = int(random()*number_of_records)+1
     random_letter = Post.objects.get(pk = random_index)
