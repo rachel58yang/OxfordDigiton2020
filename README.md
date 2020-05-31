@@ -11,7 +11,7 @@ python manage.py runserver
 ```
 
 ## What it does
-Quill is a **full-stack web application where 21st century pen pals, or Quill Pals, write and respond thoughtfully to letters. **
+Quill is a **full-stack web application where 21st century pen pals, or Quill Pals, write and respond thoughtfully to letters.**
 
 Quill has three main functionalities:
 1. Write an anonymous letter about anything on your mind
