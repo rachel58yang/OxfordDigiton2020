@@ -7,9 +7,8 @@
     <div class="d-flex justify-content-center" style="margin-bottom: 20px; width:50em;">
         <textarea class="form-control" style="height: 300px;" id="exampleFormControlTextarea1" rows="3">Dear Quill Pal,</textarea>
     </div>
-    <a href="/letters" type="button" class="btn btn-light" style="margin-bottom: 20px;">Find New Quill Pal</a>
     <form method="POST" class="post-form">{% csrf_token %}
-        <button type="submit" class="save btn btn-dark" style="margin-bottom: 20px;">Send Letter</button>
+        <button type="submit" class="save btn btn-light" style="margin-bottom: 20px;">Send Letter</button>
     </form>
     <!-- <div class="alert alert-danger" role="alert">
         <strong>Whoops!</strong> You've reached your limit on letters written today.
