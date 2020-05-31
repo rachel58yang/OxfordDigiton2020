@@ -11,18 +11,22 @@ def home(request):
     return render(request, 'letters/home.html', {})
 
 def add_letter(request):
-    if request.method == "POST":
-        form = PostForm(request.POST)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.create_date = timezone.now()
-            post.response = 0
-            post.save()
-            return redirect('letters/add_letter.html')
-    else:
-        form = PostForm()
     return render(request, 'letters/add_letter.html', {})
+
+def post_new(request):
+    if request.method == "POST":
+            form = PostForm(request.POST)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.create_date = timezone.now()
+                post.text = request.POST.get('text')
+                post.response = 0
+                post.save()
+                return render('letters/view_letter.html')
+            else:
+                form = PostForm()
+                return render(request, 'letters/add_letter.html', {})
 
 def view_letters(request):
     # filter out responses
