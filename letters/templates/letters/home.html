@@ -72,9 +72,22 @@
 
         <!-- Page Content  -->
         <div id="content" class="text-center">
-
-            {% block content %}{% endblock %}
-
+            {% block content %}
+            <div>
+                <h1 style="margin-bottom: 20px;">Welcome to Quill!</h1>
+                <div class="card" style="width:50em; margin-bottom: 50px;">
+                    <h6 style="margin-top: 50px; margin-bottom: 30px;">
+                        Quill is an online platform to find virtual pen pals. You simply have to write your own letter and sent it out into the world. If someone reads your letter and it resonates with them, they can respond to you. If you like their response, you match with them and form an open correspondence with them.
+                        <br />
+                        <br />
+                        The purpose of Quill is to reduce loneliness and connect people. Feel free to write your letters and view strangers' letters until you find someone who understands what you are going through or someone who is willing to listen.
+                    </h6>
+                    <img id="nav-logo" src="{% static 'images/blue-circle.png' %}" style="margin-left: auto; margin-right: auto; margin-bottom: 50px; height: 100px; width: 100px;">
+                </div>
+                </h1>
+            </div>
+            
+            {% endblock %}
         </div>
     </div>
 
