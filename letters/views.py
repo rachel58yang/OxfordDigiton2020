@@ -38,6 +38,9 @@ def response(request, id):
     letter = Post.objects.get(pk = id)
     return render(request, 'letters/response.html', {'letter': letter})
 
+def view_mail(request):
+    return render(request, 'letters/view_mail.html', {})
+
 def account_info(request):
     user = None
     print(request.user)

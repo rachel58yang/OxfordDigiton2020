@@ -8,5 +8,6 @@ urlpatterns = [
     # path('addLetter/new', views.post_new, name='post_new'),
     path('letters', views.view_letters, name='view_letters'),
     path('response/<int:id>/', views.response, name='response'),
-    path('account', views.account_info, name='account_info')
+    path('account', views.account_info, name='account_info'),
+    path('viewMail', views.view_mail, name='view_mail')
 ]

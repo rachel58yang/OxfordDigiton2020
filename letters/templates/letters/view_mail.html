@@ -1,0 +1,45 @@
+{% extends 'letters/home.html' %}
+{% block content %}
+    <div>
+        <h1 style="margin-bottom: 20px;">Your Contacts</h1>
+        <div class="card" style="width:50em; margin-bottom: 30px;">
+            <table class="table table-striped">
+            <tr>
+              <th>User</th>
+              <th>Status</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>maria.anders@gmail.com</td>
+              <td><a href='response/1/'>New Letter Received</a></td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>francisco_chang@gmail.com</td>
+              <td>Response Sent</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>roland.mendel@aol.com</td>
+              <td>Response Sent</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>helen_bennet@yahoo.com</td>
+              <td>Response Sent</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>yoshitannamuri@gmail.com</td>
+              <td><a href='/response/1/'>New Letter Received</a></td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>giovanni.rovellini@hotmail.com</td>
+              <td><a href='response/1/'>New Letter Received</a></td>
+              <td>Italy</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+{% endblock %}
